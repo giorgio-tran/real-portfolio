@@ -13,13 +13,13 @@ export default function Home() {
           <Link href="#">GitHub</Link>
         </div>
       </header>
-      <div className="min-h-screen w-full relative -z-10 overflow-visible">
+      <div className="min-h-screen w-full relative -z-10 bg-black">
         <div className="absolute rounded-full h-[30vw] w-[30vw] bg-blue-600 top-1/4 -translate-y-1/2 left-10" />
         <div className="absolute rounded-full h-[50vw] w-[50vw] bg-red-500 top-1/2 left-1/2 -translate-x-1/3 -translate-y-1/2" />
         <div className="absolute rounded-full h-[20vw] w-[20vw] bg-green-500 top-3/4 left-3/4" />
         <div className="absolute rounded-full h-[40vw] w-[40vw] bg-yellow-500 top-3/4 left-1/4 -translate-x-3/4 -translate-y-1/4" />
       </div>
-      <div className="min-h-screen w-full">
+      <div className="min-h-screen w-full bg-white -z-20">
       </div>
     </main>
   );
