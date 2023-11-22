@@ -28,7 +28,7 @@ export default function Home() {
         <div className="absolute rounded-full h-[40vw] w-[40vw] bg-yellow-500 top-3/4 left-1/4 -translate-x-3/4 -translate-y-1/4" />
       </div>
       <div
-        className="min-h-screen w-full bg-transparent flex items-end text-black justify-center relative z-20"
+        className="min-h-screen w-full bg-transparent flex items-end text-black justify-center relative"
         onMouseMove={(e) => {
           if (isMouseDown) {
             setRotateCube({
