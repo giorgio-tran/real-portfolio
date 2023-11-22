@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col">
-      <header className="fixed w-full flex justify-between px-32 items-center top-1/4 mix-blend-difference font-semibold tracking-widest z-50">
+      <header className="fixed w-full flex justify-between px-32 items-center top-1/4 mix-blend-difference font-semibold tracking-widest z-20">
         <div className="flex flex-col">
           <h1 className="text-9xl">Giorgio</h1>
           <h1 className="text-9xl">Tran</h1>
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="absolute rounded-full h-[40vw] w-[40vw] bg-yellow-500 top-3/4 left-1/4 -translate-x-3/4 -translate-y-1/4" />
       </div>
       <div
-        className="min-h-screen w-full bg-transparent flex items-end text-black justify-center relative"
+        className="min-h-screen w-full bg-transparent flex items-end text-black justify-center relative z-20"
         onMouseMove={(e) => {
           if (isMouseDown) {
             setRotateCube({
@@ -69,11 +69,7 @@ export default function Home() {
           <div
             className="cube"
             style={{
-              transform: `translateZ(-200px) ${
-                !rotateCube
-                  ? `rotateX(-10deg) rotateY(10deg)`
-                  : `rotateX(${rotateCube.x}deg) rotateY(${rotateCube.y}deg)`
-              }`,
+              transform: `translateZ(-200px) rotateX(${rotateCube.x}deg) rotateY(${rotateCube.y}deg)`,
             }}
           >
             <div className="cube__face cube__face--front">
@@ -135,7 +131,10 @@ export default function Home() {
               <div className="w-full h-full text-sm p-4">
                 <h1 className="text-xl pb-3">Contact Me</h1>
                 <div>Email</div>
-                <Link href="mailto:ttran2@hawaii.edu" className="hover:underline">
+                <Link
+                  href="mailto:ttran2@hawaii.edu"
+                  className="hover:underline"
+                >
                   ttran2@hawaii.edu
                 </Link>
               </div>
