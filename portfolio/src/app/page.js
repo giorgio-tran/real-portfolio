@@ -10,7 +10,36 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col">
+    <main
+      className={`flex min-h-screen flex-col ${
+        isMouseDown ? `cursor-grabbing` : ""
+      }`}
+      onMouseMove={(e) => {
+        if (isMouseDown) {
+          setRotateCube({
+            x: rotateCube.x + -e.movementY,
+            y: rotateCube.y + e.movementX,
+          });
+        }
+      }}
+      onMouseUp={() => {
+        console.log("unclicked");
+        setIsMouseDown(false);
+      }}
+      onTouchMove={(e) => {
+        console.log("touch move");
+        console.log(e.touches[0]);
+        if (isMouseDown) {
+          setRotateCube({
+            x: rotateCube.x + -e.movementY,
+            y: rotateCube.y + e.movementX,
+          });
+        }
+      }}
+      onTouchEnd={() => {
+        setIsMouseDown(false);
+      }}
+    >
       <header className="fixed w-full flex justify-between px-32 items-center top-1/4 mix-blend-difference font-semibold tracking-widest z-20">
         <div className="flex flex-col">
           <h1 className="text-9xl">Giorgio</h1>
@@ -27,36 +56,9 @@ export default function Home() {
         <div className="absolute rounded-full h-[20vw] w-[20vw] bg-green-500 top-3/4 left-3/4" />
         <div className="absolute rounded-full h-[40vw] w-[40vw] bg-yellow-500 top-3/4 left-1/4 -translate-x-3/4 -translate-y-1/4" />
       </div>
-      <div
-        className="min-h-screen w-full bg-transparent flex items-end text-black justify-center relative"
-        onMouseMove={(e) => {
-          if (isMouseDown) {
-            setRotateCube({
-              x: rotateCube.x + -e.movementY,
-              y: rotateCube.y + e.movementX,
-            });
-          }
-        }}
-        onMouseUp={() => {
-          console.log("unclicked");
-          setIsMouseDown(false);
-        }}
-        onTouchMove={(e) => {
-          console.log("touch move");
-          console.log(e.touches[0]);
-          if (isMouseDown) {
-            setRotateCube({
-              x: rotateCube.x + -e.movementY,
-              y: rotateCube.y + e.movementX,
-            });
-          }
-        }}
-        onTouchEnd={() => {
-          setIsMouseDown(false);
-        }}
-      >
+      <div className="min-h-screen w-full bg-transparent flex items-end text-black justify-center relative">
         <div
-          className="scene"
+          className={`scene ${isMouseDown ? "" : `cursor-grab`}`}
           onMouseDown={() => {
             console.log("clicked");
             setIsMouseDown(true);
