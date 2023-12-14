@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
   --cube-width: 300px;
-  --translateZ: 150px;
+  --translateZ: calc(var(--cube-width) / 2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,12 +68,12 @@ body {
 .cube__face--top    { background: hsla(240, 100%, 60%, 0.85); }
 .cube__face--bottom { background: hsla(300, 100%, 60%, 0.85); } */
 
-.cube__face--front  { background: hsla(180, 100%, 100%, 0.85); }
-.cube__face--right  { background: hsla(180, 100%, 100%, 0.85); }
-.cube__face--back   { background: hsla(180, 100%, 100%, 0.85); }
-.cube__face--left   { background: hsla(180, 100%, 100%, 0.85); }
-.cube__face--top    { background: hsla(180, 100%, 100%, 0.85);}
-.cube__face--bottom { background: hsla(180, 100%, 100%, 0.85); }
+.cube__face--front  { background: hsla(180, 100%, 100%, 0.7); }
+.cube__face--right  { background: hsla(180, 100%, 100%, 0.7); }
+.cube__face--back   { background: hsla(180, 100%, 100%, 0.7); }
+.cube__face--left   { background: hsla(180, 100%, 100%, 0.7); }
+.cube__face--top    { background: hsla(180, 100%, 100%, 0.7);}
+.cube__face--bottom { background: hsla(180, 100%, 100%, 0.7); }
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(var(--translateZ)); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(var(--translateZ)); }

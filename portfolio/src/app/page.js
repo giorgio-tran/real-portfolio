@@ -40,7 +40,7 @@ export default function Home() {
         setIsMouseDown(false);
       }}
     >
-      <div className="overflow-hidden min-h-screen w-1/2 fixed flex flex-col justify-between bg-white text-black md:py-20 md:pl-20">
+      <div className="overflow-hidden min-h-screen w-1/2 fixed flex flex-col justify-between bg-gray-100 text-gray-900 md:py-20 md:pl-20">
         <div className="text-9xl font-bold">
           <div>Giorgio</div>
           <div>Tran</div>
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-1/2 self-end px-10">
+      <div className="w-1/2 self-end px-10 bg-slate-950 text-gray-100">
         <div className="flex justify-center items-center my-20">
           <div
             className={`scene ${isMouseDown ? "" : `cursor-grab`}`}
