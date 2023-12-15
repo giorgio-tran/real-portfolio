@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { experience } from "./data/experience";
 
 export default function Home() {
   const [isMouseDown, setIsMouseDown] = useState(false);
@@ -119,7 +120,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="cube__face cube__face--left">
-                <div className="w-full h-full text-sm p-4 text-blue-800">
+                <div className="w-full h-full text-sm p-4">
                   <h1 className="text-xl pb-3">Experience</h1>
                   <ul>
                     <li>UH Manoa - TA</li>
@@ -154,8 +155,24 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-screen">
-          <h1 className="md:text-7xl font-bold w-full border-b-2">Experience</h1>
+        <div className="min-h-screen">
+          <h1 className="md:text-7xl font-bold w-full mt-40">
+            Experience
+          </h1>
+          <div className="py-3">
+            {experience.map((job, index) => (
+              <div className="w-full" key={index}>
+                <h1 className="flex justify-end">{job.date}</h1>
+                <div className="font-semibold">{job.company}</div>
+                <div className="mb-3">{job.position}</div>
+                <div className="flex flex-wrap gap-1">{job.technologies.map((tech, index) => (
+                  <div className="border px-3 rounded-full bg-gray-100 text-gray-900 text-sm" key={index}>
+                    {tech}
+                  </div>
+                ))}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       {/* <div className="min-h-screen w-full bg-black"></div> */}

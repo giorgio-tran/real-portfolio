@@ -1,4 +1,4 @@
-const experience = [
+export const experience = [
   {
     date: "2023 - Present",
     position: "Teaching Assistant",
@@ -7,4 +7,3 @@ const experience = [
     technologies: ["Java", "Git"]
   }
 ]
-
