@@ -155,24 +155,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="min-h-screen">
-          <h1 className="md:text-7xl font-bold w-full mt-40">
+        <div className="">
+          <h1 className="md:text-7xl font-bold w-full mt-40 mb-3">
             Experience
           </h1>
-          <div className="py-3">
+          <div className="py-3 flex flex-col gap-6">
             {experience.map((job, index) => (
               <div className="w-full" key={index}>
-                <h1 className="flex justify-end">{job.date}</h1>
-                <div className="font-semibold">{job.company}</div>
-                <div className="mb-3">{job.position}</div>
-                <div className="flex flex-wrap gap-1">{job.technologies.map((tech, index) => (
-                  <div className="border px-3 rounded-full bg-gray-100 text-gray-900 text-sm" key={index}>
-                    {tech}
-                  </div>
-                ))}</div>
+                <div className="font-semibold flex justify-between">
+                  <div>{job.company}</div>
+                  <h1 className="flex justify-end">{job.date}</h1>
+                </div>
+                <div className="mb-2">{job.position}</div>
+                {job.description && (
+                  <div className="mb-3 text-sm">{job.description}</div>
+                )}
+                <div className="flex flex-wrap gap-1">
+                  {job.technologies.map((tech, index) => (
+                    <div
+                      className="border px-3 rounded-full bg-gray-100 text-gray-900 text-sm font-bold"
+                      key={index}
+                    >
+                      {tech}
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
+        </div>
+        <div>
+          <h1 className="md:text-7xl font-bold w-full mt-40 mb-3">
+            Projects
+          </h1>
         </div>
       </div>
       {/* <div className="min-h-screen w-full bg-black"></div> */}
