@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "Makai",
-    image: "",
+    image: "/projects/makai.png",
     description:
       "3rd place finish at the 2023 Hawaii Annual Code Challenge. Makai is a web application that facilitates marine debris tracking and removal in Hawaii. I designed the architecture of the application, and worked on both frontend and backend. On the frontend side, I worked on creating map based data visualizations, and creating a user friendly interface for users to interact with. On the backend side, I implemented authorization and authentication through NextAuth, and worked on various API endpoints.",
     technologies: [
@@ -61,11 +61,6 @@ export const projects = [
       "ChatGPT API",
       "Tailwind CSS",
     ],
-    links: [
-      {
-        name: "In Progress...",
-        url: "#",
-      },
-    ],
+    links: [],
   },
 ];
