@@ -45,7 +45,7 @@ export default function Home() {
         setIsMouseDown(false);
       }}
     >
-      <div className="overflow-hidden min-h-screen w-1/2 fixed flex flex-col justify-between bg-gray-100 text-gray-900 md:py-20 md:pl-20">
+      <div className="overflow-hidden lg:min-h-screen lg:w-1/2 lg:fixed flex flex-col justify-between bg-gray-100 text-gray-900 lg:py-20 lg:pl-20">
         <div className="text-9xl font-bold">
           <div>Giorgio</div>
           <div>Tran</div>
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-1/2 self-end px-10 bg-slate-950 text-gray-100">
+      <div className="lg:w-1/2 lg:self-end px-10 bg-slate-950 text-gray-100">
         <div className="flex justify-center items-center my-20">
           <div
             className={`scene ${isMouseDown ? "" : `cursor-grab`}`}
@@ -160,7 +160,7 @@ export default function Home() {
           </div>
         </div>
         <div className="">
-          <h1 className="md:text-7xl font-bold w-full mt-40 mb-3">
+          <h1 className="lg:text-7xl font-bold w-full mt-40 mb-3">
             Experience
           </h1>
           <div className="py-3 flex flex-col gap-6">
@@ -169,52 +169,53 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div>
-          <h1 className="md:text-7xl font-bold w-full mt-40 mb-3">Projects</h1>
+        <div className="pb-40">
+          <h1 className="lg:text-7xl font-bold w-full mt-40 mb-3">Projects</h1>
           <div className="flex flex-col gap-6">
             {projects.map((project, index) => (
               <div className="w-full" key={index}>
-                <div className="">
+                <div className="flex md:w-3/4 md:pr-4 justify-between items-baseline">
                   <div className="font-bold text-xl">{project.name}</div>
-                  <div className="flex gap-3">
-                    <div className="w-3/4">
-                      <div className="text-sm">{project.description}</div>
-                      <div className="text-sm flex gap-3">
-                        {project.links &&
-                          project.links.map((link, index) => (
-                            <Link
-                              href={link.url}
-                              key={index}
-                              className="flex gap-1 items-center"
-                            >
-                              {link.name}{" "}
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                dataSlot="icon"
-                                className="w-4 h-4"
-                              >
-                                <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
-                                <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
-                              </svg>
-                            </Link>
-                          ))}
-                      </div>
-                      <div className="flex flex-wrap gap-1">
-                        {project.technologies.map((tech, index) => (
-                          <Pill key={index}>{tech}</Pill>
-                        ))}
-                      </div>
+                  <div className="text-sm flex gap-3">
+                    {project.links &&
+                      project.links.map((link, index) => (
+                        <Link
+                          href={link.url}
+                          key={index}
+                          className="flex gap-1 items-center hover:text-blue-400"
+                        >
+                          {link.name}{" "}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            className="w-4 h-4"
+                          >
+                            <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+                            <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+                          </svg>
+                        </Link>
+                      ))}
+                  </div>
+                </div>
+                <div className="flex flex-col gap-3 md:flex-row">
+                  <div className="md:w-3/4">
+                    <div className="text-sm py-1 leading-normal">
+                      {project.description}
                     </div>
-                    <div className="w-1/4">
-                      <Image
-                        src={project.image}
-                        width={200}
-                        height={200}
-                        className="border-gray-500 border rounded"
-                      />
+                    <div className="flex flex-wrap gap-x-1.5 gap-y-1 py-2">
+                      {project.technologies.map((tech, index) => (
+                        <Pill key={index}>{tech}</Pill>
+                      ))}
                     </div>
+                  </div>
+                  <div className="lg:w-1/4">
+                    <Image
+                      src={project.image}
+                      width={200}
+                      height={200}
+                      className="border-gray-500 border rounded"
+                    />
                   </div>
                 </div>
               </div>
