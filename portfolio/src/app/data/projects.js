@@ -45,7 +45,7 @@ export const projects = [
     name: "DOELT",
     image: "/projects/doelt.png",
     description:
-      "2nd place finish at the 2022 Hawaii Annual Code Challenge. The Department of Education Legislative Tracker (DOELT) is a web application that helps the DOE track and manage legislation. I gathered user needs and architected the user experience. Additionally, I implemented a scraper that scrapes several pages in the Hawaii State Legislature website for bills and their related information, and further assisted with frontend and backend development.",
+      "2nd place finish at the 2022 Hawaii Annual Code Challenge. The Department of Education Legislative Tracker (DOELT) is a web application that helps the DOE track and manage legislation. A scraper was built to obtain up to date and accurate information about ongoing legislation, and a user friendly interface was developed for the DOE to stay up to date with the latest legislation.",
     technologies: [
       "React",
       "Javascript",
