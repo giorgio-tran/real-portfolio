@@ -1,6 +1,12 @@
 export const experience = [
   {
-    date: "2023 — PRESENT",
+    date: "JAN 2024 - PRESENT",
+    position: "Graduate Research Assistant",
+    company: "Laboratory of Advanced Visualization & Applications",
+    technologies: ["React", "Typescript", "Git", "Vite"]
+  },
+  {
+    date: "JAN 2023 — DEC 2023",
     position: "Teaching Assistant",
     company: "University of Hawaii at Manoa",
     description: "In Spring 2023, I prepared presentations for the lab section of ICS 111: Introduction to Computer Science. In Fall 2023, I was a TA for ICS 314: Software Engineering I, where I helped students learn about web development.",
