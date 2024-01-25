@@ -146,7 +146,7 @@ export default function Home() {
                   <h1 className="text-xl pb-3">
                     Coffee I&apos;m Currently Drinking...
                   </h1>
-                  <p>Black and White - Agualinda Natural Chiroso</p>
+                  <p>La Cabra - La Union</p>
                 </div>
               </div>
               <div className="cube__face cube__face--bottom">
