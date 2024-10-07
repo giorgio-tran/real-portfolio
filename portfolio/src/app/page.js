@@ -42,7 +42,7 @@ export default function Home() {
         isMouseDown ? `cursor-grabbing` : ""
       }`}
     >
-      <div className="overflow-hidden lg:min-h-screen lg:w-1/2 lg:fixed flex lg:flex-col justify-between lg:bg-gray-100 lg:text-gray-900 px-10 py-5 lg:py-20">
+      <div className="overflow-hidden lg:min-h-screen lg:w-1/2 lg:fixed flex lg:flex-col justify-between lg:bg-gray-100 lg:text-gray-900 px-5 py-5 lg:py-20">
         <Link
           href="/"
           className="text-4xl lg:text-9xl font-bold flex gap-1 lg:gap-0 lg:flex-col"
@@ -82,7 +82,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg:w-1/2 lg:self-end px-10 bg-slate-950 text-gray-100">
+      <div className="lg:w-1/2 lg:self-end px-5 bg-slate-950 text-gray-100">
         <div className="flex justify-center items-center my-20">
           <div
             ref={touchBoxRef}
