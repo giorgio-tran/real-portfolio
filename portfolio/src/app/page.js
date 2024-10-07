@@ -14,6 +14,23 @@ export default function Home() {
   });
   const touchStartRef = useRef({ x: 0, y: 0 });
   const touchBoxRef = useRef(null);
+  const animationRef = useRef(null);
+
+  const rotateCubeAutomatically = () => {
+    if (!isMouseDown) {
+      setRotateCube((prev) => ({
+        x: prev.x,
+        y: prev.y + 0.05, // Increment y for continuous rotation
+      }));
+    }
+    animationRef.current = requestAnimationFrame(rotateCubeAutomatically);
+  };
+
+  useEffect(() => {
+    rotateCubeAutomatically(); // Start the rotation
+
+    return () => cancelAnimationFrame(animationRef.current); // Cleanup on unmount
+  }, []);
 
   useEffect(() => {
     const preventScroll = (e) => {
