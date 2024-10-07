@@ -6,7 +6,7 @@ const Project = ({ project }) => {
   return (
     <div className="w-full">
       <div className="flex md:w-3/4 md:pr-4 justify-between items-baseline">
-        <div className="font-bold text-xl">{project.name}</div>
+        <div className="font-bold">{project.name}</div>
         <div className="text-sm flex gap-3">
           {project.links &&
             project.links.map((link, index) => (
