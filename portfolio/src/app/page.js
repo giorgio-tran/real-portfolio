@@ -178,14 +178,16 @@ export default function Home() {
                 <div className="w-full h-full text-sm p-4">
                   <h1 className="text-xl pb-3">Technologies</h1>
                   <ul>
-                    <li>Java</li>
-                    <li>Python</li>
                     <li>Javascript</li>
                     <li>Typescript</li>
+                    <li>React</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>React</li>
+                    <li>Python</li>
                     <li>MongoDB</li>
+                    <li>Java</li>
+                    <li>Langchain</li>
+                    <li>Langgraph</li>
                   </ul>
                 </div>
               </div>

@@ -1,11 +1,11 @@
 export const experience = [
   {
-    date: "JAN 2024 - PRESENT",
+    date: "JAN 2024 — PRESENT",
     position: "Graduate Research Assistant",
     company: "LAVA",
     technologies: ["React", "Typescript", "Git", "Vite", "Python"],
     description:
-      "At the Laboratory for Advanced Visualizations and Applications, I worked on several projects, which include SAGE3 (an AI-driven collaboration software), Articulate's frontend (natural language to charts), and lastly Waggle (edge sensors with GPUs for AI at the edge).",
+      "At the Laboratory for Advanced Visualizations and Applications, I worked on several projects, which include SAGE3 (an AI-driven collaboration software), Articulate's frontend (natural language to charts), and lastly Sage Nodes (edge sensors with GPUs for AI at the edge).",
   },
   {
     date: "JAN 2023 — DEC 2023",

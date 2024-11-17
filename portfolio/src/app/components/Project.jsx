@@ -35,9 +35,10 @@ const Project = ({ project }) => {
             {project.description}
           </div>
           <div className="flex flex-wrap gap-x-1.5 gap-y-1 py-1 lg:py-2">
-            {project.technologies.map((tech, index) => (
-              <Pill key={index}>{tech}</Pill>
-            ))}
+            {project.technologies &&
+              project.technologies.map((tech, index) => (
+                <Pill key={index}>{tech}</Pill>
+              ))}
           </div>
         </div>
         <div className="lg:w-1/4">
