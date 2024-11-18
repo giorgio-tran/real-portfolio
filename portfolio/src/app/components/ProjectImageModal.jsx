@@ -27,7 +27,7 @@ const ProjectImageModal = ({ isOpen, setIsOpen, image, description }) => {
               <div className="sm:flex sm:items-start">
                 <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                   <div className="mt-2">
-                    <Image src={image} width="1000" height="1000" />
+                    <Image src={image} width="1000" height="500" />
                   </div>
                   <div className="text-gray-900 mt-4">{description}</div>
                 </div>
