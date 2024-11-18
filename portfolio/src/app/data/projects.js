@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "Sage Node Installation",
-    image: "/projects/rapid_sensor.jpg",
+    image: "/projects/rapid_node.jpg",
     description:
       "I assisted with the installation of a Sage Node in Lahaina, Maui. Despite the challenging heat, the experience was invaluable. Under the guidance of experts from Argonne National Laboratory, I gained firsthand exposure and a deeper understanding of the hardware and software powering the Sage Node.",
     image_description: "Sage Node installed in Lahaina, Maui.",
