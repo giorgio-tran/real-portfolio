@@ -20,7 +20,7 @@ export const experience = [
     position: "Software Engineering Intern",
     company: "Oceanit",
     description:
-      "I worked on project RIVEAL, which aims to automate and significantly improve efficiency in pipe inspections. I designed and implemented the user interface and the data storage. Additionally, I designed and developed a web application that supported over 50 users for an internal silent auction that helped raise funds for Hawaii Pacific Health's Cancer Center.",
+      "I worked on project RIVEAL, which aims to automate and significantly improve efficiency in pipe inspections. I designed and implemented the user interface and the data storage. Additionally, I designed and developed a web application that supported over 50 users for an internal silent auction that helped raise funds for Kapiolani Health Foundation.",
     technologies: [
       "React",
       "Typescript",
