@@ -34,7 +34,7 @@ const Project = ({ project }) => {
               ))}
           </div>
         </div>
-        <div className="flex flex-col gap-2 lg:gap-3 md:flex-row">
+        <div className="flex flex-col gap-2 lg:gap-3 md:flex-row md:justify-between">
           <div className="md:w-3/4">
             <div className="text-sm py-1 leading-normal">
               {project.description}
@@ -47,7 +47,7 @@ const Project = ({ project }) => {
             </div>
           </div>
           <div
-            className="lg:w-1/4 cursor-pointer"
+            className="lg:w-fit cursor-pointer items-end"
             onClick={() => {
               setIsOpen(true);
             }}

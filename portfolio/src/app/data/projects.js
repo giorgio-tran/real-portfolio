@@ -57,6 +57,10 @@ export const projects = [
         name: "Github",
         url: "https://github.com/HACC-2023/makai",
       },
+      {
+        name: "HACC 2023",
+        url: "https://hacc.hawaii.gov/news-releases/2023-hawaii-annual-code-challenge-winners-are/",
+      },
     ],
   },
   {
@@ -114,6 +118,10 @@ export const projects = [
       {
         name: "Github",
         url: "https://github.com/HACC-Cassiopeia/Legislative-Scraper-Production",
+      },
+      {
+        name: "HACC 2022",
+        url: "https://hacc.hawaii.gov/news-releases/2022-hawaii-annual-code-challenge-winners-are/",
       },
     ],
   },
