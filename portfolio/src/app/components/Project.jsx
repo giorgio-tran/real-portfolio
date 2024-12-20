@@ -10,7 +10,7 @@ const Project = ({ project }) => {
   return (
     <>
       <div className="w-full">
-        <div className="flex md:w-3/4 md:pr-4 justify-between items-baseline">
+        <div className="flex md:w-3/4 md:pr-6 justify-between items-baseline">
           <div className="font-bold">{project.name}</div>
           <div className="text-sm flex gap-3">
             {project.links &&
@@ -36,7 +36,7 @@ const Project = ({ project }) => {
         </div>
         <div className="flex flex-col gap-2 lg:gap-3 md:flex-row md:justify-between">
           <div className="md:w-3/4">
-            <div className="text-sm py-1 leading-normal">
+            <div className="text-sm py-1 leading-normal text-justify">
               {project.description}
             </div>
             <div className="flex flex-wrap gap-x-1.5 gap-y-1 py-1 lg:py-2">

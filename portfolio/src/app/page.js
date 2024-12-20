@@ -264,7 +264,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      {/* <div className="min-h-screen w-full bg-black"></div> */}
     </main>
   );
 }

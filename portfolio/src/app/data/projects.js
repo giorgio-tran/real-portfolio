@@ -30,7 +30,6 @@ export const projects = [
     description:
       "I assisted with the installation of a Sage Node in Lahaina, Maui. Despite the challenging heat, the experience was invaluable. Under the guidance of experts from Argonne National Laboratory, I gained firsthand exposure and a deeper understanding of the hardware and software powering the Sage Node.",
     image_description: "Sage Node installed in Lahaina, Maui.",
-    technologies: ["Python"],
   },
   {
     name: "Wildfire Detection at the Edge",
