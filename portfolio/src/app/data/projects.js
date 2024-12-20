@@ -1,10 +1,36 @@
 export const projects = [
   {
+    name: "History of Coffee",
+    image: "/projects/data-vis.png",
+    description:
+      "Designed and implemented an interactive 3D globe and user interface for a data visualization application showcasing the history of coffee from 1990 to 2019. Preprocessed the original data and converted it into GeoJSON format for rendering on the globe. Developed intuitive user interactions to enhance engagement and data exploration.",
+    image_description: "The data visualization web application.",
+    technologies: [
+      "React",
+      "Globe.gl",
+      "D3.js",
+      "Tailwind CSS",
+      "Typescript",
+      "Git",
+    ],
+    links: [
+      {
+        name: "Live Demo",
+        url: "https://data-visualization-chi-henna.vercel.app/",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/Team-13-2024/data-visualization",
+      },
+    ],
+  },
+  {
     name: "Sage Node Installation",
     image: "/projects/rapid_node.jpg",
     description:
       "I assisted with the installation of a Sage Node in Lahaina, Maui. Despite the challenging heat, the experience was invaluable. Under the guidance of experts from Argonne National Laboratory, I gained firsthand exposure and a deeper understanding of the hardware and software powering the Sage Node.",
     image_description: "Sage Node installed in Lahaina, Maui.",
+    technologies: ["Python"],
   },
   {
     name: "Wildfire Detection at the Edge",
