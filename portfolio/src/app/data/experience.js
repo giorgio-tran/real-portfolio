@@ -1,6 +1,6 @@
 export const experience = [
   {
-    date: "JAN 2024 — PRESENT",
+    date: "JAN 2024 — DEC 2024",
     position: "Graduate Research Assistant",
     company: "LAVA",
     technologies: ["React", "Typescript", "Git", "Vite", "Python"],

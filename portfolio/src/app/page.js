@@ -158,11 +158,12 @@ export default function Home() {
                 <div className="w-full h-full text-sm p-4">
                   <h1 className="text-xl pb-3">About Me</h1>
                   <p>
-                    Hello, my name is Giorgio Tran. I am a graduate student
-                    pursuing a Master's in Computer Science at the University of
-                    Hawaii at Manoa. I expect to graduate in Fall 2024. Outside
-                    of academia and coding, you can find me brewing coffee,
-                    playing board games, or hiking.
+                    Hello, my name is Giorgio Tran. I recently earned my
+                    Master&#x27;s in Computer Science from the University of
+                    Hawaii at Manoa. I&#x27;m passionate about web development,
+                    with a focus on creating intuitive and visually engaging
+                    user interfaces. When I&#x27;m not coding, I enjoy brewing
+                    coffee, playing table tennis, and hiking.
                   </p>
                 </div>
               </div>

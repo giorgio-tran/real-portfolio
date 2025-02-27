@@ -36,7 +36,7 @@ const Project = ({ project }) => {
         </div>
         <div className="flex flex-col gap-2 lg:gap-3 md:flex-row md:justify-between">
           <div className="md:w-3/4">
-            <div className="text-sm py-1 leading-normal text-justify">
+            <div className="text-sm py-1 leading-normal tracking-wide">
               {project.description}
             </div>
             <div className="flex flex-wrap gap-x-1.5 gap-y-1 py-1 lg:py-2">
